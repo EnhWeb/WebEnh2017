@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>KAI.UEditor</id>
+    <version>1.0.0.2</version>
+    <title>UEditor For Asp.Net</title>
+    <authors>yankai</authors>
+    <owners>yankai</owners>
+    <projectUrl>http://git.oschina.net/86yankai/UEditor</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>参考 http://git.oschina.net/86yankai/UEditor</description>
+    <releaseNotes>参考 http://git.oschina.net/86yankai/UEditor</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>UEditor KAI</tags>
+  </metadata>
+</package>
