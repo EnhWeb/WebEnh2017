@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  webenhmap:
+    image: webenhmap
+    build:
+      context: ./WebEnhMap
+      dockerfile: Dockerfile
