@@ -34,9 +34,52 @@ namespace EfTest.Models
             /// 行版本
             /// </summary>
             [Timestamp]
-            [Display(Name = "行版本"),DisplayName("行版本")]
+            [Display(Name = "行版本"), DisplayName("行版本")]
             byte[] RowVersion { get; set; }
-        } 
+        }
+        #endregion
+
+        #region 行版本 接口
+        /// <summary>
+        /// 数据状态 接口
+        /// </summary>
+        public interface IDataState
+        {
+            /// <summary>
+            /// 创建时间
+            /// </summary>
+            [Display(Name = "创建时间"), DisplayName("创建时间")]
+            [Editable(false), EditorBrowsable(EditorBrowsableState.Never)]
+            DateTime CreateTime { get; set; }
+
+            /// <summary>
+            /// 创建人ID
+            /// </summary>
+            [Display(Name = "创建人ID或用户名"), DisplayName("创建人ID或用户名")]
+            [Editable(false)]
+            string CreateUserId { get; set; }
+
+            /// <summary>
+            /// 修改时间
+            /// </summary>
+            [Display(Name = "修改时间"), DisplayName("修改时间")]
+            [Editable(false)]
+            DateTime UpdataTime { get; set; }
+
+            /// <summary>
+            /// 修改人ID
+            /// </summary>
+            [Display(Name = "修改人ID"), DisplayName("修改人ID")]
+            [Editable(false)]
+            string UpdateUserId { get; set; }
+
+            /// <summary>
+            /// 数据状态，是否已删除
+            /// </summary>
+            [Display(Name = "是否已删除"), DisplayName("是否已删除")]
+            [Editable(false)]
+            bool IsDeleted { get; set; }
+        }
         #endregion
 
         #region 修改数据时，如果行版本不一至，则报错，内容为：数据版本不一至，请返回重新进入再修改！
