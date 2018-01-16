@@ -39,7 +39,7 @@ namespace EfTest.Models
         }
         #endregion
 
-        #region 行版本 接口
+        #region 数据状态 接口
         /// <summary>
         /// 数据状态 接口
         /// </summary>
